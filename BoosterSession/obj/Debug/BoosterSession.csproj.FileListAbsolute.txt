@@ -1,0 +1,17 @@
+D:\VC\PROG6221\BoosterSession\BoosterSession\bin\Debug\BoosterSession.exe.config
+D:\VC\PROG6221\BoosterSession\BoosterSession\bin\Debug\BoosterSession.exe
+D:\VC\PROG6221\BoosterSession\BoosterSession\bin\Debug\BoosterSession.pdb
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\BoosterSession.csproj.AssemblyReference.cache
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\BoosterSession.csproj.SuggestedBindingRedirects.cache
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\MainWindow.g.cs
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\App.g.cs
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\BoosterSession_MarkupCompile.cache
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\BoosterSession_MarkupCompile.lref
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\MainWindow.baml
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\BoosterSession.g.resources
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\BoosterSession.Properties.Resources.resources
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\BoosterSession.csproj.GenerateResource.cache
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\BoosterSession.csproj.CoreCompileInputs.cache
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\BoosterSession.exe
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\BoosterSession.pdb
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\Styles.baml

@@ -1,0 +1,39 @@
+﻿<Page x:Class="BoosterSession.Views.pgCapture"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BoosterSession.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="700"
+      Title="pgCapture">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="142*"/>
+            <RowDefinition Height="45*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="148*"/>
+            <ColumnDefinition Width="27*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Employee ID:" HorizontalAlignment="Left" Margin="47,23,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="79"/>
+        <TextBox Name="txtEmployeeID" Style="{StaticResource textboxes}" HorizontalAlignment="Left" Margin="47,54,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="130" />
+        <Label Content="Firstname:" HorizontalAlignment="Right" Margin="0,82,480,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="64"/>
+        <TextBox x:Name="txtFirstname" Style="{StaticResource textboxes}" HorizontalAlignment="Left" Margin="47,117,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="130" />
+        <Label Content="Lastname:" HorizontalAlignment="Left" Margin="219,82,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="64"/>
+        <TextBox x:Name="txtLastname" Style="{StaticResource textboxes}" HorizontalAlignment="Left" Margin="217,117,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="130" />
+        <Label Content="Phone:" HorizontalAlignment="Left" Margin="381,86,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="46"/>
+        <TextBox Name="txtPhone" Style="{StaticResource textboxes}" HorizontalAlignment="Left" Margin="381,117,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="130" />
+        <Label Content="Years Of Experience:" HorizontalAlignment="Left" Margin="217,145,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="130"/>
+        <TextBox Name="txtExp" Style="{StaticResource textboxes}" HorizontalAlignment="Left" Margin="217,176,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="130" />
+        <Label Content="Employment Type:" HorizontalAlignment="Left" Margin="47,217,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="116"/>
+
+        <Button x:Name="btnSave" Style="{StaticResource buttons}" Content="Save" HorizontalAlignment="Left" Margin="131,35,0,0" Grid.Row="2" VerticalAlignment="Top" Height="33" Width="79"   />
+        <Button x:Name="btnClear" Style="{StaticResource buttons}" Content="Clear" HorizontalAlignment="Left" Margin="276,35,0,0" Grid.Row="2" VerticalAlignment="Top" Height="33" Width="79" />
+        <Label Content="Salary:" HorizontalAlignment="Left" Margin="40,145,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="46"/>
+        <TextBox x:Name="txtSalary" Style="{StaticResource textboxes}" HorizontalAlignment="Left" Margin="40,176,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="130" />
+
+    </Grid>
+</Page>
