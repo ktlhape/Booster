@@ -32,8 +32,9 @@ namespace BoosterSession.Views
             string firstaname, lastname, phone; 
             string employmentType ="";
             double salary;
-            bool isMarried = true;
+            bool isMarried = false;
 
+            //Add Validations 
             id = Convert.ToInt32(txtEmployeeID.Text);
             firstaname = txtFirstname.Text;
             lastname = txtLastname.Text;
@@ -41,9 +42,11 @@ namespace BoosterSession.Views
             salary = Convert.ToDouble(txtSalary.Text);
             experience = Convert.ToInt32(txtExp.Text);
 
+            isMarried = (chkIsMarried.IsChecked == true); //This can either be true or false
+
             if (rdoContractor.IsChecked == true)
             {
-                employmentType = "Contractot";
+                employmentType = "Contractor";
             }else if (rdoFull.IsChecked == true)
             {
                 employmentType = "Full-Time";
@@ -55,8 +58,23 @@ namespace BoosterSession.Views
 
             Employee em = new Employee(id, firstaname, lastname, phone, salary, experience, employmentType, isMarried);
             Employee.Employees.Add(em);
+            ClearForm();
 
+        }
+        private void ClearForm()
+        {
+            txtEmployeeID.Clear();
+            txtFirstname.Clear();
+            txtLastname.Clear();
+            txtPhone.Clear();
+            txtExp.Clear();
+            txtSalary.Clear();
+            txtEmployeeID.Focus();
+        }
 
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            ClearForm();
         }
     }
 }

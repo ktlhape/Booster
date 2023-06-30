@@ -8,6 +8,7 @@ namespace BoosterSession.Models
 {
     public class Employee
     {
+        
         public int EmployeeID { get; set; } 
         public string Firstname { get; set; } 
         public string Lastname { get; set; } 
@@ -41,35 +42,26 @@ namespace BoosterSession.Models
 
         public static Employee GetEmployee(int id)
         {
-            Employee em = new Employee();
-   
-            em = Employees.Find(e => e.EmployeeID == id);
-
-            return em;
+            //Simplified
+           return Employees.Find(e => e.EmployeeID == id);
         }
 
         public static List<Employee> GetByLastname(string lastname)
         {
-            List<Employee> emNames = new List<Employee>();
-
-            foreach (Employee item in Employees)
-            {
-                if (item.Lastname.Equals(lastname))
-                {
-                    emNames.Add(item);
-                }
-            }
-           // emNames = Employees.FindAll(e => e.Lastname.Equals(lastname)).ToList();
-
-            return emNames;
+          return Employees.FindAll(e => e.Lastname.Equals(lastname)).ToList();
         }
         public static Employee HighestSalary()
         {
-            Employee em = new Employee();
             double maxSalary = Employees.Max(e => e.Salary);
-            em = Employees.Find(x => x.Salary == maxSalary);
-
-            return em;
+          return Employees.Find(x => x.Salary == maxSalary);
+        }
+        public static List<Employee> MarriedEmployees()
+        {
+            return Employees.Where(x => x.IsMarried.Equals(true)).ToList();
+        }
+        public static List<Employee> GetByEmployment(string type)
+        {
+            return Employees.Where(x => x.EmployementType.Equals(type)).ToList();
         }
         public static string GetEmployeesData(List<Employee> emList)
         {
@@ -79,7 +71,6 @@ namespace BoosterSession.Models
             {
                 strOutput += em.ToString() + "\n";
             }
-
             return strOutput;
         } 
 

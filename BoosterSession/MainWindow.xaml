@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BoosterSession"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="550" Width="900">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="149*"/>
             <ColumnDefinition Width="651*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Background="RoyalBlue" Height="NaN" Width="NaN">
-            <Button  x:Name="btnCapture" Content="Capture" Click="btnCapture_Click" />
-            <Button Name="btnFilter"  Content="Filter" Click="btnFilter_Click" />
-            <Button Name="btnStats" Content="Stats" Click="btnStats_Click" />
-            <Button Name="btnExit" Content="Exit"/>
+            <Button Style="{StaticResource MenuButtons}" x:Name="btnCapture" Content="Capture" Click="btnCapture_Click" />
+            <Button Style="{StaticResource MenuButtons}" Name="btnFilter"  Content="Filter" Click="btnFilter_Click" />
+            <Button Style="{StaticResource MenuButtons}" Name="btnStats" Content="Stats" Click="btnStats_Click" />
+            <Button Style="{StaticResource MenuButtons}" Name="btnExit" Content="Exit"/>
 
         </StackPanel>
         <Frame Name="frmContainer" Grid.Column="1" NavigationUIVisibility="Hidden"/>

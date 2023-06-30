@@ -30,29 +30,47 @@ namespace BoosterSession.Views
         {
             lstDisplay.Items.Clear();
             string searchText = "";
+            int id;
             List<Employee> emList = new List<Employee>();
             Employee em = new Employee();
 
-            if (cmbSearchBy.SelectedItem.ToString().Equals("Lastname"))
+            if (cmbSearchBy.SelectedItem.ToString().Equals("Employee ID"))
+            {
+                id = Convert.ToInt32(txtSearch.Text);
+                em = Employee.GetEmployee(id);
+                lstDisplay.Items.Add(em.ToString());
+            }
+            else if (cmbSearchBy.SelectedItem.ToString().Equals("Lastname"))
             {
                 searchText = txtSearch.Text;
-                emList = Employee.GetByLastname("Parks");
+                emList = Employee.GetByLastname(searchText);
                 lstDisplay.Items.Add(Employee.GetEmployeesData(emList));
-
-            }else if (cmbSearchBy.SelectedItem.ToString().Equals("Max Salary"))
+            }
+            else if (cmbSearchBy.SelectedItem.ToString().Equals("Max Salary"))
             {
                 em = Employee.HighestSalary();
                 lstDisplay.Items.Add(em.ToString());
             }
-
+            else if (cmbSearchBy.SelectedItem.ToString().Equals("Is Married"))
+            {
+                emList = Employee.MarriedEmployees();
+                lstDisplay.Items.Add(Employee.GetEmployeesData(emList));
+            }
+            else if (cmbSearchBy.SelectedItem.ToString().Equals("Emplyoment"))
+            {
+                searchText = txtSearch.Text;
+                emList = Employee.GetByEmployment(searchText);
+                lstDisplay.Items.Add(Employee.GetEmployeesData(emList));
+            }
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            cmbSearchBy.Items.Add("Employee ID");
             cmbSearchBy.Items.Add("Lastname");
             cmbSearchBy.Items.Add("Max Salary");
-            //cmbSearchBy.Items.Add("Is Married");
-            //cmbSearchBy.Items.Add("Emplyoment");
+            cmbSearchBy.Items.Add("Is Married");
+            cmbSearchBy.Items.Add("Emplyoment");
         }
     }
 }
