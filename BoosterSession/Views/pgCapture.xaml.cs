@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BoosterSession.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,37 @@ namespace BoosterSession.Views
             InitializeComponent();
         }
 
-      
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            int id, experience;
+            string firstaname, lastname, phone; 
+            string employmentType ="";
+            double salary;
+            bool isMarried = true;
+
+            id = Convert.ToInt32(txtEmployeeID.Text);
+            firstaname = txtFirstname.Text;
+            lastname = txtLastname.Text;
+            phone = txtPhone.Text;
+            salary = Convert.ToDouble(txtSalary.Text);
+            experience = Convert.ToInt32(txtExp.Text);
+
+            if (rdoContractor.IsChecked == true)
+            {
+                employmentType = "Contractot";
+            }else if (rdoFull.IsChecked == true)
+            {
+                employmentType = "Full-Time";
+            }
+            else if (rdoPart.IsChecked == true)
+            {
+                employmentType = "Part-Time";
+            }
+
+            Employee em = new Employee(id, firstaname, lastname, phone, salary, experience, employmentType, isMarried);
+            Employee.Employees.Add(em);
+
+
+        }
     }
 }

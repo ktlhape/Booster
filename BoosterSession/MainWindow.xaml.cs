@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BoosterSession.Models;
+using BoosterSession.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,13 +22,30 @@ namespace BoosterSession
     /// </summary>
     public partial class MainWindow : Window
     {
-        Student st = new Student();
+
+        pgCapture capture = new pgCapture();
+        pgFilter filter = new pgFilter();
+        pgStats stats = new pgStats();
+
         public MainWindow()
         {
             InitializeComponent();
-        
+
         }
 
-       
+        private void btnCapture_Click(object sender, RoutedEventArgs e)
+        {
+            frmContainer.Content = capture;
+        }
+
+        private void btnFilter_Click(object sender, RoutedEventArgs e)
+        {
+            frmContainer.Content = filter;
+        }
+
+        private void btnStats_Click(object sender, RoutedEventArgs e)
+        {
+            frmContainer.Content = stats;
+        }
     }
 }

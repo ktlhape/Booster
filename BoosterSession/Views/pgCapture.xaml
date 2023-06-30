@@ -30,10 +30,13 @@
         <TextBox Name="txtExp" Style="{StaticResource textboxes}" HorizontalAlignment="Left" Margin="217,176,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="130" />
         <Label Content="Employment Type:" HorizontalAlignment="Left" Margin="47,217,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="116"/>
 
-        <Button x:Name="btnSave" Style="{StaticResource buttons}" Content="Save" HorizontalAlignment="Left" Margin="131,35,0,0" Grid.Row="2" VerticalAlignment="Top" Height="33" Width="79"   />
+        <Button x:Name="btnSave" Style="{StaticResource buttons}" Content="Save" HorizontalAlignment="Left" Margin="131,35,0,0" Grid.Row="2" VerticalAlignment="Top" Height="33" Width="79" Click="btnSave_Click"   />
         <Button x:Name="btnClear" Style="{StaticResource buttons}" Content="Clear" HorizontalAlignment="Left" Margin="276,35,0,0" Grid.Row="2" VerticalAlignment="Top" Height="33" Width="79" />
         <Label Content="Salary:" HorizontalAlignment="Left" Margin="40,145,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="46"/>
         <TextBox x:Name="txtSalary" Style="{StaticResource textboxes}" HorizontalAlignment="Left" Margin="40,176,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="130" />
+        <RadioButton GroupName="empType" Name="rdoFull" Content="Full-Time" HorizontalAlignment="Left" Margin="163,223,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <RadioButton GroupName="empType" Name="rdoPart" Content="Part-Time" HorizontalAlignment="Left" Margin="262,223,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <RadioButton GroupName="empType" Name="rdoContractor" Content="Contractor" HorizontalAlignment="Left" Margin="361,223,0,0" Grid.Row="1" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

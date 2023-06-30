@@ -12,9 +12,9 @@
             <ColumnDefinition Width="651*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Background="RoyalBlue" Height="NaN" Width="NaN">
-            <Button  x:Name="btnCapture" Content="Capture" />
-            <Button Name="btnFilter"  Content="Filter" />
-            <Button Name="btnStats" Content="Stats" />
+            <Button  x:Name="btnCapture" Content="Capture" Click="btnCapture_Click" />
+            <Button Name="btnFilter"  Content="Filter" Click="btnFilter_Click" />
+            <Button Name="btnStats" Content="Stats" Click="btnStats_Click" />
             <Button Name="btnExit" Content="Exit"/>
 
         </StackPanel>

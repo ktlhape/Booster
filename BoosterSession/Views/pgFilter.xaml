@@ -1,0 +1,25 @@
+﻿<Page x:Class="BoosterSession.Views.pgFilter"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BoosterSession.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Loaded="Page_Loaded"
+
+      Title="pgFilter">
+
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Search By:" HorizontalAlignment="Left" Margin="59,49,0,0" VerticalAlignment="Top" Height="26" Width="79"/>
+        <Button x:Name="btnSearch" Content="Search" Style="{StaticResource buttons}" Margin="519,54,0,0" Click="btnSearch_Click" HorizontalAlignment="Left" Width="130" Height="42" VerticalAlignment="Top" />
+        <ComboBox Name="cmbSearchBy" HorizontalAlignment="Left" Margin="143,0,0,0" VerticalAlignment="Center" Width="120"/>
+
+        <ListBox x:Name="lstDisplay" Grid.Row="1" BorderBrush="AliceBlue" BorderThickness="2" Margin="20"/>
+        <TextBox x:Name="txtSearch" Style="{StaticResource textboxes}" HorizontalAlignment="Left" Margin="315,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" />
+    </Grid>
+</Page>

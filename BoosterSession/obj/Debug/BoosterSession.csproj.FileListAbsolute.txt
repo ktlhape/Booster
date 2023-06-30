@@ -15,3 +15,17 @@ D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\BoosterSession.csproj.Cor
 D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\BoosterSession.exe
 D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\BoosterSession.pdb
 D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\Styles.baml
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\Views\pgCapture.g.cs
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\Views\pgFilter.g.cs
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\Views\pgStats.g.cs
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\App.baml
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\Views\pgCapture.baml
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\Views\pgFilter.baml
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\Views\pgStats.baml
+D:\VC\PROG6221\BoosterSession\BoosterSession\bin\Debug\LiveCharts.dll
+D:\VC\PROG6221\BoosterSession\BoosterSession\bin\Debug\LiveCharts.Wpf.dll
+D:\VC\PROG6221\BoosterSession\BoosterSession\bin\Debug\LiveCharts.pdb
+D:\VC\PROG6221\BoosterSession\BoosterSession\bin\Debug\LiveCharts.xml
+D:\VC\PROG6221\BoosterSession\BoosterSession\bin\Debug\LiveCharts.Wpf.pdb
+D:\VC\PROG6221\BoosterSession\BoosterSession\bin\Debug\LiveCharts.Wpf.xml
+D:\VC\PROG6221\BoosterSession\BoosterSession\obj\Debug\BoosterSession.csproj.CopyComplete
