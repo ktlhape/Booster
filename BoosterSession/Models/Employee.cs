@@ -52,7 +52,14 @@ namespace BoosterSession.Models
         {
             List<Employee> emNames = new List<Employee>();
 
-            emNames = Employees.Where(e => e.Lastname.Equals(lastname)).ToList();
+            foreach (Employee item in Employees)
+            {
+                if (item.Lastname.Equals(lastname))
+                {
+                    emNames.Add(item);
+                }
+            }
+           // emNames = Employees.FindAll(e => e.Lastname.Equals(lastname)).ToList();
 
             return emNames;
         }
@@ -68,7 +75,7 @@ namespace BoosterSession.Models
         {
             string strOutput = "";
 
-            foreach (Employee em in Employees)
+            foreach (Employee em in emList)
             {
                 strOutput += em.ToString() + "\n";
             }

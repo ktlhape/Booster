@@ -36,7 +36,7 @@ namespace BoosterSession.Views
             if (cmbSearchBy.SelectedItem.ToString().Equals("Lastname"))
             {
                 searchText = txtSearch.Text;
-                emList = Employee.GetByLastname(searchText);
+                emList = Employee.GetByLastname("Parks");
                 lstDisplay.Items.Add(Employee.GetEmployeesData(emList));
 
             }else if (cmbSearchBy.SelectedItem.ToString().Equals("Max Salary"))
