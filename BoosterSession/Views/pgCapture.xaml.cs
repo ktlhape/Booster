@@ -25,7 +25,6 @@ namespace BoosterSession.Views
         {
             InitializeComponent();
         }
-
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
             int id, experience;
@@ -35,6 +34,8 @@ namespace BoosterSession.Views
             bool isMarried = false;
 
             //Add Validations 
+
+            
             id = Convert.ToInt32(txtEmployeeID.Text);
             firstaname = txtFirstname.Text;
             lastname = txtLastname.Text;
@@ -57,9 +58,8 @@ namespace BoosterSession.Views
             }
 
             Employee em = new Employee(id, firstaname, lastname, phone, salary, experience, employmentType, isMarried);
-            Employee.Employees.Add(em);
+            Employee.AddEmployee(em);
             ClearForm();
-
         }
         private void ClearForm()
         {

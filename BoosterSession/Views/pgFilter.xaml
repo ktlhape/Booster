@@ -19,7 +19,9 @@
         <Button x:Name="btnSearch" Content="Search" Style="{StaticResource buttons}" Margin="520,56,0,0" Click="btnSearch_Click" HorizontalAlignment="Left" Width="130" Height="42" VerticalAlignment="Top" />
         <ComboBox Name="cmbSearchBy" HorizontalAlignment="Left" Margin="143,0,0,0" VerticalAlignment="Center" Width="120" Height="23"/>
 
-        <ListBox x:Name="lstDisplay" Grid.Row="1" BorderBrush="AliceBlue" BorderThickness="2" Margin="20"/>
+        <ListBox x:Name="lstDisplay" Grid.Row="1" BorderBrush="AliceBlue" BorderThickness="2" Margin="20" >
+            <ScrollBar/>
+        </ListBox>
         <TextBox x:Name="txtSearch" Style="{StaticResource textboxes}" HorizontalAlignment="Left" Margin="313,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="23" />
     </Grid>
 </Page>
